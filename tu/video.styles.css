@@ -1,0 +1,136 @@
+/* 基础样式 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #f4f4f4 25%, #d9d9d9);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* 导航栏样式 */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+.navbar .logo {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    float: right;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+.navbar .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    padding: 14px 20px;
+}
+
+/* 容器样式 */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 60px; /* 让出导航栏的位置 */
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* 视频样式 */
+video {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 说明文字样式 */
+.caption {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #555;
+    font-weight: 300;
+}
+
+/* 媒体查询：小屏幕设备 */
+@media (max-width: 600px) {
+    .caption {
+        font-size: 16px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    video {
+        border: none;
+        box-shadow: none;
+    }
+
+    .caption {
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar .nav-links li {
+        display: block;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+}
