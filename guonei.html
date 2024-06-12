@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国内</title>
+    <link rel="stylesheet" href="css/styles1.css">
+    <style>
+        /* 先前的样式部分 */
+        .scrollable-frame {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .scrollable-content {
+            overflow-y: scroll;
+            height: 200px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .text-below {
+            padding-top: 10px;
+        }
+
+        .emphasized-text {
+            cursor: pointer;
+            text-decoration: underline;
+            color: rgba(154, 112, 45, 0.653);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="搜索国内对应序号...">
+        </div>
+    </header>
+    <div class="container" id="scrollable-container">
+        <!-- 动态生成的滚动框将插入到这里 -->
+    </div>
+    <main id="product-list"></main>
+    <script src="js/scriptnei.js"></script>
+</body>
+</html>
