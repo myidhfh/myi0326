@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 示例数据，可以替换为实际数据源
     const data = [
+        { imageUrl: 'all/image/393号.jpg', texts: ['393号', '胖熊全程试穿性感内裤', '23分钟--1G','￥5'] },
         { imageUrl: 'all/image/382号.jpg', texts: ['382号', '15分钟--652MB','￥5'] },
     ];
 
@@ -28,6 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
             p.classList.add('emphasized-text'); // 添加强调样式的类名
             // 添加点击事件监听器
             p.addEventListener('click', () => {
+                if (item.imageUrl === 'all/image/393号.jpg') {
+                    window.location.href = 'tu/393号.html';
+                }
                 if (item.imageUrl === 'all/image/382号.jpg') {
                     window.location.href = 'tu/382号.html';
                 }
