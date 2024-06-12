@@ -49,7 +49,7 @@ header {
 }
 
 .scrollable-content {
-    max-height: 400px; /* 设置滚动框的最大高度 */
+    max-height: 450px; /* 设置滚动框的最大高度 */
     flex-grow: 1;
     overflow-y: scroll;
 
