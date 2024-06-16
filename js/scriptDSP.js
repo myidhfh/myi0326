@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 示例数据，可以替换为实际数据源
     const data = [
-        { imageUrl: 'all/image/382号.jpg', texts: ['382号', '15分钟--652MB','￥5'] },
+        { imageUrl: 'all/image/DSP3.jpg', texts: ['短视频3号', '共96个吃瓜短视频','￥48'] },
     ];
 
     // 动态生成滚动框
@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
             p.classList.add('emphasized-text'); // 添加强调样式的类名
             // 添加点击事件监听器
             p.addEventListener('click', () => {
-                if (item.imageUrl === 'all/image/382号.jpg') {
-                    window.location.href = 'tu/382号.html';
+                if (item.imageUrl === 'all/image/DSP3.jpg') {
+                    window.location.href = 'tu/DSP3.html';
                 }
             });
             textBelow.appendChild(p);
