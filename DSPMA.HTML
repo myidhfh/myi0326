@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>密码验证</title>
+  <style>
+    #togglePassword {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>"密码是群主提供给你的私密密码"</h1>
+  <h2>由于国内资源牵扯到个人隐私，不方便直接公之于众</h2>
+  <h2>国外的资源也很不错，但如果对国内资源有需求的话：</h2>
+  <p>请从主页找到群主的联系方式，支付19.9米即可永久解锁，并且更新不断，有VIP群哦！</p>
+  <form>
+    <input type="password" id="passwordInput">
+    <span id="togglePassword">👁️</span>
+    <button type="button" id="submitButton">提交</button>
+  </form>
+
+  <script>
+    const passwordInput = document.getElementById('passwordInput');
+    const togglePassword = document.getElementById('togglePassword');
+    const submitButton = document.getElementById('submitButton');
+    const correctPassword = "Zzlglh_616"; // 将"your_password_here"替换为实际的正确密码
+
+    togglePassword.addEventListener('click', function() {
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+      } else {
+        passwordInput.type = 'password';
+      }
+    });
+
+    submitButton.addEventListener('click', function() {
+      const enteredPassword = passwordInput.value;
+      if (enteredPassword === correctPassword) {
+        window.location.href = "DSP.html"; // 如果密码正确，跳转到下一个页面
+      } else {
+        alert("密码不正确，请重新输入。"); // 如果密码不正确，显示警告信息
+      }
+    });
+  </script>
+</body>
+</html>
