@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 示例数据，可以替换为实际数据源
     const data = [
+        { imageUrl: 'all/image/414.jpg', texts: ['414号', '32分钟--258MB','￥5'] },
         { imageUrl: 'all/image/410号.jpg', texts: ['410号', '58分钟--1.86G','￥7'] },
         { imageUrl: 'all/image/398号.jpg', texts: ['398号', '10分钟--304MB','￥5'] },
         { imageUrl: 'all/image/396号.jpg', texts: ['396号', '两只胖熊互吃纯享版', '39分钟--1.13G','￥5'] },
@@ -32,6 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
             p.classList.add('emphasized-text'); // 添加强调样式的类名
             // 添加点击事件监听器
             p.addEventListener('click', () => {
+                if (item.imageUrl === 'all/image/414.jpg') {
+                    window.location.href = 'tu/414.html';
+                }
                 if (item.imageUrl === 'all/image/410号.jpg') {
                     window.location.href = 'tu/410号.html';
                 }
