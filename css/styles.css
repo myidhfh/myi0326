@@ -61,3 +61,23 @@ main {
     transform: translateY(-50%);
     pointer-events: none;
 }
+
+.image-container {
+    display: flex;
+    flex-direction: row; /* 默认情况下水平排列 */
+    justify-content: space-around; /* 控制图片之间的间距，可根据需要调整 */
+  }
+  
+  img {
+    max-width: 100%; /* 确保图片不会超出容器宽度 */
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .image-container {
+      flex-direction: row; /* 在宽度小于768px的设备上保持水平排列 */
+      flex-wrap: nowrap; /* 禁止换行，确保所有图片保持在同一行 */
+      overflow-x: auto; /* 如果图片太多，允许水平滚动 */
+    }
+  }
+  
