@@ -6,4 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('guowai-folder').addEventListener('click', function() {
         window.location.href = 'guowai.html';
     });
+    document.getElementById('DSPdabao-folder').addEventListener('click', function() {
+        window.location.href = 'DSPdabao.html';
+    });
 });
