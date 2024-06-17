@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // 示例数据，可以替换为实际数据源
     const data = [
         { imageUrl: 'all/image/DSP3.jpg', texts: ['短视频3号', '共96个吃瓜短视频','￥48'] },
+        { imageUrl: 'all/image/DSP2.jpg', texts: ['短视频2号', '共68个吃瓜短视频','￥34'] },
+        { imageUrl: 'all/image/DSP1.jpg', texts: ['短视频1号', '共84个吃瓜短视频','￥42'] },
     ];
 
     // 动态生成滚动框
@@ -30,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
             p.addEventListener('click', () => {
                 if (item.imageUrl === 'all/image/DSP3.jpg') {
                     window.location.href = 'tu/DSP3.html';
+                }
+                if (item.imageUrl === 'all/image/DSP2.jpg') {
+                    window.location.href = 'tu/DSP2.html';
                 }
             });
             textBelow.appendChild(p);
