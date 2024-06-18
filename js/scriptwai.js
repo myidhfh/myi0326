@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 示例数据，可以替换为实际数据源
     const data = [
+        { imageUrl: 'all/image/426.jpg', texts: ['426号', '1.04小时--1.26G','￥7'] },
+        { imageUrl: 'all/image/425.jpg', texts: ['425号', '40分钟--603MB','￥6'] },
+        { imageUrl: 'all/image/424.jpg', texts: ['424号', '1.08小时--1.16G','￥7'] },
+        { imageUrl: 'all/image/423.jpg', texts: ['423号', '47分钟--810MB','￥6'] },
         { imageUrl: 'all/image/421.jpg', texts: ['421号', '1.55小时--1.15G','￥7'] },
         { imageUrl: 'all/image/420.jpg', texts: ['420号', '26分钟--1.50G','￥6'] },
         { imageUrl: 'all/image/419.jpg', texts: ['419号', '22分钟--1.25G','￥6'] },
@@ -39,6 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
             p.classList.add('emphasized-text'); // 添加强调样式的类名
             // 添加点击事件监听器
             p.addEventListener('click', () => {
+                if (item.imageUrl === 'all/image/426.jpg') {
+                    window.location.href = 'tu/426.html';
+                }
+                if (item.imageUrl === 'all/image/425.jpg') {
+                    window.location.href = 'tu/425.html';
+                }
+                if (item.imageUrl === 'all/image/424.jpg') {
+                    window.location.href = 'tu/424.html';
+                }
+                if (item.imageUrl === 'all/image/423.jpg') {
+                    window.location.href = 'tu/423.html';
+                }
                 if (item.imageUrl === 'all/image/421.jpg') {
                     window.location.href = 'tu/421.html';
                 }
