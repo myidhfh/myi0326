@@ -2,32 +2,29 @@
 <html>
 <head>
   <title>密码验证</title>
-  <style>
-    #togglePassword {
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="css/guowaiMA.css"> <!-- 引入外部样式表 -->
 </head>
 <body>
-  <h1>密码即："目录压缩包密码"</h1>
-  <form>
-    <input type="password" id="passwordInput">
-    <span id="togglePassword">👁️</span>
-    <button type="button" id="submitButton">提交</button>
-  </form>
+  <div class="container">
+    <h1>国外密码：Zzlglh_326</h1>
+    <form>
+      <div class="input-wrapper">
+        <input type="password" id="passwordInput" class="password-input">
+        <span id="togglePassword" class="toggle-password">👁️</span>
+      </div>
+      <button type="button" id="submitButton" class="submit-button">提交</button>
+    </form>
+  </div>
 
   <script>
     const passwordInput = document.getElementById('passwordInput');
     const togglePassword = document.getElementById('togglePassword');
     const submitButton = document.getElementById('submitButton');
-    const correctPassword = "Zzlglh_326"; // 将"your_password_here"替换为实际的正确密码
+    const correctPassword = "Zzlglh_326"; // 实际的正确密码
 
     togglePassword.addEventListener('click', function() {
-      if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-      } else {
-        passwordInput.type = 'password';
-      }
+      passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+      togglePassword.textContent = passwordInput.type === 'password' ? '👁️' : '👁️'; // 切换显示密码可见性图标
     });
 
     submitButton.addEventListener('click', function() {
