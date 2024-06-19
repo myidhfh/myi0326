@@ -2,41 +2,36 @@
 <html>
 <head>
   <title>密码验证</title>
-  <style>
-    #togglePassword {
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="css/guowaiMA.css"> <!-- 引入外部样式表 -->
 </head>
 <body>
-  <h1>"密码是群主提供给你的私密密码"</h1>
-  <h2>由于国内资源牵扯到个人隐私，不方便直接公之于众</h2>
-  <h2>国外的资源也很不错，但如果对国内资源有需求的话：</h2>
-  <p>请从主页找到群主的联系方式，支付19.9米即可永久解锁，并且更新不断，有VIP群哦！</p>
-  <form>
-    <input type="password" id="passwordInput">
-    <span id="togglePassword">👁️</span>
-    <button type="button" id="submitButton">提交</button>
-  </form>
+  <div class="container">
+    <h1>国内密码暂定：Zzlglh_326</h1>
+    <p>支付19.9米进VIP群国内外瓜通吃！</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="password" id="passwordInput" class="password-input">
+        <span id="togglePassword" class="toggle-password">👁️</span>
+      </div>
+      <button type="button" id="submitButton" class="submit-button">提交</button>
+    </form>
+  </div>
 
   <script>
     const passwordInput = document.getElementById('passwordInput');
     const togglePassword = document.getElementById('togglePassword');
     const submitButton = document.getElementById('submitButton');
-    const correctPassword = "Zzlglh_326"; // 将"your_password_here"替换为实际的正确密码
+    const correctPassword = "Zzlglh_326"; // 实际的正确密码
 
     togglePassword.addEventListener('click', function() {
-      if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-      } else {
-        passwordInput.type = 'password';
-      }
+      passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+      togglePassword.textContent = passwordInput.type === 'password' ? '👁️' : '👁️'; // 切换显示密码可见性图标
     });
 
     submitButton.addEventListener('click', function() {
       const enteredPassword = passwordInput.value;
       if (enteredPassword === correctPassword) {
-        window.location.href = "guonei.html"; // 如果密码正确，跳转到下一个页面
+        window.location.href = "guowai.html"; // 如果密码正确，跳转到下一个页面
       } else {
         alert("密码不正确，请重新输入。"); // 如果密码不正确，显示警告信息
       }
