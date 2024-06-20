@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>密码验证</title>
+  <link rel="stylesheet" href="css/guowaiMA.css"> <!-- 引入外部样式表 -->
+</head>
+<body>
+  <div class="container">
+    <h1>漫画打包密码暂定：Zzlglh_326</h1>
+    <p>支付19.9米进VIP群国内外瓜通吃！</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="password" id="passwordInput" class="password-input">
+        <span id="togglePassword" class="toggle-password">👁️</span>
+      </div>
+      <button type="button" id="submitButton" class="submit-button">提交</button>
+    </form>
+  </div>
+
+  <script>
+    const passwordInput = document.getElementById('passwordInput');
+    const togglePassword = document.getElementById('togglePassword');
+    const submitButton = document.getElementById('submitButton');
+    const correctPassword = "Zzlglh_326"; // 实际的正确密码
+
+    togglePassword.addEventListener('click', function() {
+      passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+      togglePassword.textContent = passwordInput.type === 'password' ? '👁️' : '👁️'; // 切换显示密码可见性图标
+    });
+
+    submitButton.addEventListener('click', function() {
+      const enteredPassword = passwordInput.value;
+      if (enteredPassword === correctPassword) {
+        window.location.href = "MH.html"; // 如果密码正确，跳转到下一个页面
+      } else {
+        alert("密码不正确，请重新输入。"); // 如果密码不正确，显示警告信息
+      }
+    });
+  </script>
+</body>
+</html>
