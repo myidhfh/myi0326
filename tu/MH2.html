@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫画打包2号</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>示例（Run away第1.2.3话）</h1>
+    <iframe src="MH2.pdf" allowfullscreen></iframe>
+
+    <script>
+        const iframe = document.querySelector('iframe');
+        iframe.setAttribute('allow', 'fullscreen'); // 允许全屏显示
+    </script>
+</body>
+</html>
