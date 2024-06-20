@@ -3,6 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 示例数据，可以替换为实际数据源
     const data = [
+        { imageUrl: 'all/image/434.jpg', texts: ['434号', '23分钟--0.99G','￥6'] },
+        { imageUrl: 'all/image/433.jpg', texts: ['433号','<医生后续>大胖熊', '27分钟--1.15G','￥6'] },
+        { imageUrl: 'all/image/432.jpg', texts: ['432号','全程一直输出！超爽！', '39分钟--1.40G','￥6.5'] },
+        { imageUrl: 'all/image/431.jpg', texts: ['431号','<校园>4-5个片段看不完', '1.58小时--1.33G','￥7.5'] },
+        { imageUrl: 'all/image/430.jpg', texts: ['430号','全程输出！氛围感拉满~', '42分钟--1.88G','￥5.5'] },
+        { imageUrl: 'all/image/429.jpg', texts: ['429号','2个段 人物也不同', '1.32小时--1.82G','￥6.5'] },
+        { imageUrl: 'all/image/428.jpg', texts: ['428号','4-5个片段不重', '1.19小时--1.52G','￥6.5'] },
+        { imageUrl: 'all/image/427.jpg', texts: ['427号','大包！', '17分钟--735MB','￥5'] },
         { imageUrl: 'all/image/426.jpg', texts: ['426号', '1.04小时--1.26G','￥7'] },
         { imageUrl: 'all/image/425.jpg', texts: ['425号', '40分钟--603MB','￥6'] },
         { imageUrl: 'all/image/424.jpg', texts: ['424号', '1.08小时--1.16G','￥7'] },
@@ -43,6 +51,30 @@ document.addEventListener('DOMContentLoaded', () => {
             p.classList.add('emphasized-text'); // 添加强调样式的类名
             // 添加点击事件监听器
             p.addEventListener('click', () => {
+                if (item.imageUrl === 'all/image/434.jpg') {
+                    window.location.href = 'tu/434.html';
+                }
+                if (item.imageUrl === 'all/image/433.jpg') {
+                    window.location.href = 'tu/433.html';
+                }
+                if (item.imageUrl === 'all/image/432.jpg') {
+                    window.location.href = 'tu/432.html';
+                }
+                if (item.imageUrl === 'all/image/431.jpg') {
+                    window.location.href = 'tu/431.html';
+                }
+                if (item.imageUrl === 'all/image/430.jpg') {
+                    window.location.href = 'tu/430.html';
+                }
+                if (item.imageUrl === 'all/image/429.jpg') {
+                    window.location.href = 'tu/429.html';
+                }
+                if (item.imageUrl === 'all/image/428.jpg') {
+                    window.location.href = 'tu/428.html';
+                }
+                if (item.imageUrl === 'all/image/427.jpg') {
+                    window.location.href = 'tu/427.html';
+                }
                 if (item.imageUrl === 'all/image/426.jpg') {
                     window.location.href = 'tu/426.html';
                 }
