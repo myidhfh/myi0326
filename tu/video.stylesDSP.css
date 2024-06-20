@@ -1,34 +1,39 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .video-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Space between videos */
-    justify-content: center; /* Center the videos horizontally */
+    justify-content: center;
+    padding: 20px;
 }
 
 .video-item {
-    width: calc(50% - 10px); /* Each video takes up 50% of the container width minus the gap */
-    max-width: 320px; /* Ensure a maximum width for the videos */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 320px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-video {
-    width: 100%; /* Make the video width 100% of its container */
-    display: block; /* Remove any default inline spacing */
+.video-item video {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 .caption {
     margin-top: 10px;
-    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
 }
