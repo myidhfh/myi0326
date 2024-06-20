@@ -64,6 +64,27 @@ document.addEventListener('DOMContentLoaded', () => {
             p.classList.add('emphasized-text'); // 添加强调样式的类名
             // 添加点击事件监听器
             p.addEventListener('click', () => {
+                if (item.imageUrl === 'all/image/441.jpg') {
+                    window.location.href = 'tu/441.html';
+                }
+                if (item.imageUrl === 'all/image/440.jpg') {
+                    window.location.href = 'tu/440.html';
+                }
+                if (item.imageUrl === 'all/image/439.jpg') {
+                    window.location.href = 'tu/439.html';
+                }
+                if (item.imageUrl === 'all/image/438.jpg') {
+                    window.location.href = 'tu/438.html';
+                }
+                if (item.imageUrl === 'all/image/437.jpg') {
+                    window.location.href = 'tu/437.html';
+                }
+                if (item.imageUrl === 'all/image/436.jpg') {
+                    window.location.href = 'tu/436.html';
+                }
+                if (item.imageUrl === 'all/image/435.jpg') {
+                    window.location.href = 'tu/435.html';
+                }
                 if (item.imageUrl === 'all/image/422.jpg') {
                     window.location.href = 'tu/422.html';
                 }
