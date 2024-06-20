@@ -9,4 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('DSPMA-folder').addEventListener('click', function() {
         window.location.href = 'DSPMA.html';
     });
+    document.getElementById('MHMA-folder').addEventListener('click', function() {
+        window.location.href = 'MHMA.html';
+    });
 });
