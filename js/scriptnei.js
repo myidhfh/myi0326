@@ -40,6 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
         { imageUrl: 'all/image/384号.jpg', texts: ['384号', '41分钟--1.28G','￥7'] },
         { imageUrl: 'all/image/383号.jpg', texts: ['383号', '1小时--1.15G','￥7'] },
         { imageUrl: 'all/image/381号.jpg', texts: ['381号', '2个视频共14分钟--69.6MB','￥5'] },
+        { imageUrl: 'all/image/374.jpg', texts: ['374号', '拳交' ,'13分钟--67.6MB','￥5'] },
+        { imageUrl: 'all/image/369.jpg', texts: ['369号', '22分钟--964MB','￥5'] },
+        { imageUrl: 'all/image/368.jpg', texts: ['368号', '高中小熊与两位大叔' ,'28分钟--148MB','￥6'] },
+        { imageUrl: 'all/image/366.jpg', texts: ['366号', '16分钟--262MB','￥5'] },
+        { imageUrl: 'all/image/361.jpg', texts: ['361号', '山东中年胖熊自慰' ,'19分钟--416MB','￥5'] },
+        { imageUrl: 'all/image/360.jpg', texts: ['360号', '熊狒系列猛1' ,'27分钟--220MB','￥5'] },
+        { imageUrl: 'all/image/353.jpg', texts: ['353号', '6个小视频' ,'共7分钟--46MB','￥5'] },
+        { imageUrl: 'all/image/338.jpg', texts: ['338号', '18分钟--147MB','￥6'] },
     ];
 
     // 动态生成滚动框
@@ -178,7 +186,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (item.imageUrl === 'all/image/381号.jpg') {
                     window.location.href = 'tu/381号.html';
                 }
-                
+                if (item.imageUrl === 'all/image/374.jpg') {
+                    window.location.href = 'tu/374.html';
+                }
+                if (item.imageUrl === 'all/image/369.jpg') {
+                    window.location.href = 'tu/369.html';
+                }
+                if (item.imageUrl === 'all/image/368.jpg') {
+                    window.location.href = 'tu/368.html';
+                }
+                if (item.imageUrl === 'all/image/366.jpg') {
+                    window.location.href = 'tu/366.html';
+                }
+                if (item.imageUrl === 'all/image/361.jpg') {
+                    window.location.href = 'tu/361.html';
+                }
+                if (item.imageUrl === 'all/image/360.jpg') {
+                    window.location.href = 'tu/360.html';
+                }
+                if (item.imageUrl === 'all/image/353.jpg') {
+                    window.location.href = 'tu/353.html';
+                }
+                if (item.imageUrl === 'all/image/338.jpg') {
+                    window.location.href = 'tu/338.html';
+                }
             });
             textBelow.appendChild(p);
         });
